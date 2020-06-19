@@ -1,0 +1,118 @@
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    background: #fcfcfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4);
+    height: 100vh;
+}
+
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #2d8dc4;
+    border: 3px solid #ffffff;
+    color: white;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #2d8dc4;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.modal-close:hover {
+    transform: scale(1.2);
+    color: #2d8dc4;
+    background: white;
+}
+
+.modal-content .avatar {
+    transition: 0.3s;
+}
+
+.modal-content .avatar:hover {
+    transform: scale(1.1);
+    border: 3px solid #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    border-radius: 50%;
+}
+
+
+
+/* =================FLEXBOX===================== */
+
+header {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 16rem;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    color: #858585;
+    letter-spacing: 1.3px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #2d8dc4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    margin: 1rem auto;
+    width: 75%;
+
+}
+
+.card {
+    display: flex;
+    border: 2px solid #dfdfdf;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    font-size: 1rem;
+    justify-content: space-around;
+    transition: 0.3s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.075) translateY(-10px);
+    background: #2d8dc4;
+    border: 2px solid #394f5c;
+    color: white;
+}
+
+.card:hover .avatar {
+    border: 2px solid white;
+}
